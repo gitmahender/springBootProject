@@ -1,0 +1,5 @@
+
+
+//Mocking a void method
+doNothing().when(innerOrderServiceMock).voidMethod(any(String.class));
+		

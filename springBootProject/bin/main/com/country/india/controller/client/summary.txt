@@ -1,0 +1,44 @@
+//Resttemplate is the root object
+
+		//fill url
+		//fill path
+		//fill path param variable
+		//fill request param variables
+		//fill accept
+		//fill content-type
+		//fill method {get or post}
+		//fill response type
+		//fill body
+		//fill uriVariables which contains parameter values
+		
+		
+		URL:
+		we can pass url as a string
+		we can set url within URI object
+		
+		Path:
+		set the complete path as string and pass to exchange message which take a string argument
+		
+		Accept/Content-Type:
+		we can push these into plain hashmap with key values
+		we can also set these in the HttpHeaders object which then you can set it to HttpRequestEntity
+		
+		path param:
+		we can push variables as key value pairs into plain hashmap and pass to exchange method as URIVariables
+		
+		@RequestParam:
+		use the URIComponentBuilder and push/set everything in the url.
+		now do a build to obtain the final url as a string or URI object 
+		then you can pass to exchange method.
+		
+		query param:
+		Spring controller does not have query params
+		
+		
+		body:
+		set it up to the request entity
+		
+		RestTemplate restTemplate = new RestTemplate();
+		
+		
+		
